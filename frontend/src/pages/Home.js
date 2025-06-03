@@ -14,6 +14,9 @@ import online from "../assets/images/online.jpg";
 import offline from "../assets/images/Offline.jpg";
 import networking from "../assets/images/networking.jpg";
 import collab from "../assets/images/collab.jpg";
+import yoga1 from "../assets/images/yoga01.jpg";
+import yoga2 from "../assets/images/yoga02.jpg";
+import yoga3 from "../assets/images/yoga03.jpg";
 import industry from "../assets/images/ind.jpg";
 import digvideo from "../assets/images/digvideo.jpg";
 import award from "../assets/images/award.png";
@@ -128,72 +131,22 @@ const Home = () => {
       <div className="client_section container">
         <div className="box">
           <div className="img-box">
-            <img src={diglib} alt="Digital Libraries" />
+            <img src={online} alt="Digital Libraries" />
           </div>
           <div className="detail-box">
             <div className="client_info">
               <div className="client_name">
-                <h5>Digital Libraries and e-Learning Platforms</h5>
-                <h6>
-                  Access to thousands of e-books, online courses from top
-                  universities
+                <h5>Weekly Online Yoga Education Session for School Teachers</h5>
+                <h6>📅 Every Saturday & Sunday<br/>
+                    🕒 Time: 4:00 PM – 5:00<br/>
+                    📍 Live on: Google Meet<br/>
+                    🎓 For Teachers of Grades 6 to 12<br/>
+                    🧾 E-Certificates for Participation
                 </h6>
               </div>
             </div>
             <a
-              className="btn btn-primary mt-5 text-center"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleClickHere("ebook");
-              }}
-            >
-              View Details
-            </a>
-          </div>
-        </div>
-        <div className="box">
-          <div className="img-box">
-            <img src={lms} alt="LMS" />
-          </div>
-          <div className="detail-box">
-            <div className="client_info">
-              <div className="client_name">
-                <h5>Learning Management System (LMS)</h5>
-                <h6>
-                  Educational software and tools, virtual labs and, educational
-                  games
-                </h6>
-              </div>
-            </div>
-            <a
-              className="btn btn-primary mt-5 text-center"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleClickHere("lms");
-              }}
-            >
-              View Details
-            </a>
-          </div>
-        </div>
-        <div className="box">
-          <div className="img-box">
-            <img src={online} alt="Online Workshops" />
-          </div>
-          <div className="detail-box">
-            <div className="client_info">
-              <div className="client_name">
-                <h5>Monthly online workshops</h5>
-                <h6>
-                  Topics like innovative teaching methods, technology
-                  integration, educational leadership
-                </h6>
-              </div>
-            </div>
-            <a
-              className="btn btn-primary mt-5 text-center"
+              className="btn btn-primary mt-3 text-center"
               href="#"
               onClick={(e) => {
                 e.preventDefault();
@@ -206,20 +159,72 @@ const Home = () => {
         </div>
         <div className="box">
           <div className="img-box">
+            <img src={yoga1} alt="LMS" />
+          </div>
+          <div className="detail-box">
+            <div className="client_info">
+              <div className="client_name">
+                <h5>Why Attend?</h5>
+                <h6>Explore <strong>  modern pedagogies</strong> in yoga teaching.<br/>
+                    Align yoga practice with <strong>mental wellness, focus, and emotional intelligence</strong>.<br/>
+                    Learn how to embed yoga in <strong>CBSE/ICSE curriculum & NEP 2020 guidelines</strong>.<br/>
+                    Get <strong>ready-to-use lesson plans, meditation scripts, and student-friendly practices</strong></h6>
+              </div>
+            </div>
+            {/* <a
+              className="btn btn-primary mt-5 text-center"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handleClickHere("lms");
+              }}
+            >
+              View Details
+            </a> */}
+          </div>
+        </div>
+        <div className="box">
+          <div className="img-box">
+            <img src={yoga3} alt="Online Workshops" />
+          </div>
+          <div className="detail-box">
+            <div className="client_info">
+              <div className="client_name">
+                <h5>Session Includes</h5>
+                <h6>
+                  Live guided yoga & pranayama<br/>
+                  Scientific breakdown of poses<br/>
+                  Teaching hacks for teenagers. Ready-to-use digital classroom resources
+                </h6>
+              </div>
+            </div>
+            {/* <a
+              className="btn btn-primary mt-5 text-center"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handleClickHere("online");
+              }}
+            >
+              View Details
+            </a> */}
+          </div>
+        </div>
+        <div className="box">
+          <div className="img-box">
             <img src={offline} alt="Offline Workshops" />
           </div>
           <div className="detail-box">
             <div className="client_info">
               <div className="client_name">
-                <h5>Quaterly offline workshops</h5>
+                <h5>Detailed Topics & Pedagogical Content</h5>
                 <h6>
-                  Professional development workshops, hands-on training for
-                  teachers, leadership development
+                  Each weekly session can focus on a <b>contemporary theme</b> that blends <b>ancient yogic wisdom with modern educational methods</b>
                 </h6>
               </div>
             </div>
             <a
-              className="btn btn-primary mt-5 text-center"
+              className="btn btn-primary mt-2 text-center"
               href="#"
               onClick={(e) => {
                 e.preventDefault();
@@ -232,16 +237,20 @@ const Home = () => {
         </div>
         <div className="box">
           <div className="img-box">
-            <img src={networking} alt="Networking" />
+            <img src={yoga2} alt="Networking" />
           </div>
           <div className="detail-box">
             <div className="client_info">
               <div className="client_name">
-                <h5>Networking events</h5>
-                <h6>Meet industry experts, educators, and innovators</h6>
+                <h5>Additional Support Resources</h5>
+                <h6><strong>Apps</strong>: Sattva, Calm, Insight Timer (for guided meditations). 
+                  <strong>CBSE Yoga Manual</strong>: Available on cbseacademic.nic.in<br/>
+                  <strong>NEP Yoga Guidelines</strong>: Refer to Ministry of Education circulars<br/>
+                  <strong>Videos</strong>: Ayush Ministry YouTube channel; Art of Living school sessions<br/>
+                  <strong>Web Tools</strong>: Canva (for posters), Flipgrid (student reflection), Jamboard (emotion mapping)</h6>
               </div>
             </div>
-            <a
+            {/* <a
               className="btn btn-primary mt-5 text-center"
               href="#"
               onClick={(e) => {
@@ -250,7 +259,7 @@ const Home = () => {
               }}
             >
               View Details
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="box">
@@ -260,11 +269,14 @@ const Home = () => {
           <div className="detail-box">
             <div className="client_info">
               <div className="client_name">
-                <h5>Collaborative projects</h5>
-                <h6>Joint research projects, student exchange programs</h6>
+                <h5>Teaching Yoga in a Classroom Setting </h5>
+                <h6><strong>Why It Matters</strong>: Teachers need tools that work within limited space & time.
+                  <strong>What to Teach</strong>: Desk yoga, partner poses, standing asanas.
+                  <strong>Methodology</strong>: 5-minute movement breaks; “Yoga Bell” technique; student-led warm-ups.
+                  <strong>Printable</strong>: Daily posture-of-the-day chart.</h6>
               </div>
             </div>
-            <a
+            {/* <a
               className="btn btn-primary mt-5 text-center"
               href="#"
               onClick={(e) => {
@@ -273,10 +285,10 @@ const Home = () => {
               }}
             >
               View Details
-            </a>
+            </a> */}
           </div>
         </div>
-        <div className="box">
+        {/* <div className="box">
           <div className="img-box">
             <img src={industry} alt="Industry" />
           </div>
@@ -325,9 +337,9 @@ const Home = () => {
               View Details
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="container">
+      {/* <div className="container">
         <div className="section-title text-center">
           <h6 className="d-inline-block position-relative text-secondary text-uppercase pb-2 my-4">
             Additional Incentives
@@ -368,7 +380,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </>
